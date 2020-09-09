@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+}
+
+header {
+
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo p {
+    margin-left: 15px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px lightskyblue;
+}
+
+header img {
+    height: 64px;
+    width: 64px;
+    display: block;
+    margin-left: 15px;
+}
+
+head p {
+    margin-left: 15px;
+    font-size: xx-large;
+}
+
+header ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+header ul a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px lightskyblue;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/IMG_0624-EFFECTS.jpg);
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+}
+
+.main h1, .projects h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.projects {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "content content content"
+        "content content content";
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/NYC.jpg);
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+}
